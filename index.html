@@ -2,22 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Input sum calculator</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Sum of Digits Calculator</title>
+   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1 class="header">Input Calculator</h1>
-    <div class="input-wrapper">
-    <input class="input" onkeyup="AddInputs()" /><br>
-    <input class="input"  onkeyup="AddInputs()" /><br>
-    <input class="input" onkeyup="AddInputs()" /><br>
-</div>
-<div class="output">
-    <span id="Display"></span>
-    
-</div>
+    <div class="container">
+    <h1>Sum of Digits Calculator</h1>
+    <form id="digitForm">
+        <label for="testCaseCount">Number of Test Cases:</label>
+        <input type="number" id="testCaseCount" min="1" max="1000" required>
+        <br><br>
+        <div id="testCasesContainer"></div>
+        <button type="button" onclick="calculateSum()">Calculate Sum of Digits</button>
+    </form>
+    <div id="results"></div>
+</div>                                                                   
     <script src="index.js"></script>
 </body>
 </html>
